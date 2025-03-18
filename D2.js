@@ -46,6 +46,16 @@ console.log (control);
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
+/*
+let totalShoppingCart = 49.999;
+let spedizione = 10;
+let totale = null;
+if (totalShoppingCart > 50) {
+  totale = totalShoppingCart;
+} else {
+  totale = totalShoppingCart + spedizione;
+}
+console.log(totale); */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -54,6 +64,20 @@ console.log (control);
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
+let totalShoppingCart = 60;
+let spedizione = 10;
+let totale = null;
+let blackFriday = true;
+if (totalShoppingCart > 50) {
+  totale = totalShoppingCart;
+} else {
+  totale = totalShoppingCart + spedizione;
+}
+if (blackFriday == true) {
+  let sconto = totale * 0.2;
+  totale = totale - sconto;
+}
+console.log(totale);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 7
