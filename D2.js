@@ -86,6 +86,43 @@ console.log(totale);
   Alla fine mostra il risultato in console.
 */
 
+let var1 = 5;
+let var2 = 8;
+let var3 = 3;
+let maggiore = null;
+let minore = null;
+let mezzo = null;
+
+if (var1 >= var2 && var1 >= var3) {
+  maggiore = var1;
+  if (var2 >= var3) {
+    minore = var3;
+    mezzo = var2;
+  } else {
+    minore = var2;
+    mezzo = var3;
+  }
+} else if (var2 >= var1 && var2 >= var3) {
+  maggiore = var2;
+  if (var1 >= var3) {
+    minore = var3;
+    mezzo = var1;
+  } else {
+    minore = var1;
+    mezzo = var3;
+  }
+} else if (var3 >= var1 && var3 >= var2) {
+  maggiore = var3;
+  if (var2 >= var1) {
+    minore = var1;
+    mezzo = var2;
+  } else {
+    minore = var2;
+    mezzo = var1;
+  }
+}
+console.log("L'ordine delle variabili è ", maggiore, mezzo, minore);
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 8
